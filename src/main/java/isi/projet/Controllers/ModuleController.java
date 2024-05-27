@@ -2,6 +2,7 @@ package isi.projet.Controllers;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 import java.util.Optional;
 
 import isi.projet.Repository.ModuleRepoPagination;
@@ -145,4 +146,8 @@ public class ModuleController {
 		return ResponseEntity.ok(modules);
 	}
 
+	@GetMapping("/countByFiliere")
+	public List<Object> getCountModuleByFiliere(){
+		return this.moduleRepo.countModulesByFiliere();
+	}
 }
