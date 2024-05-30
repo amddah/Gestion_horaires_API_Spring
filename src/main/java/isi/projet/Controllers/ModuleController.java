@@ -150,4 +150,9 @@ public class ModuleController {
 	public List<Object> getCountModuleByFiliere(){
 		return this.moduleRepo.countModulesByFiliere();
 	}
+
+	@GetMapping("/getModuleByfiliere/{nomFiliere}")
+	public List<String> getModuleByfiliere(@PathVariable String nomFiliere){
+		return this.moduleRepo.findModulesByFiliere(nomFiliere);
+	}
 }

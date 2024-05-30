@@ -13,4 +13,7 @@ public interface ModuleRepo extends JpaRepository<Modules, String> {
 
     @Query("SELECT f.NomFiliere ,count(m.filiere.NomFiliere) as count FROM Filiere f LEFT JOIN Modules m ON f.NomFiliere = m.filiere.NomFiliere GROUP BY f.NomFiliere")
     public List<Object> countModulesByFiliere();
+
+    @Query("SELECT m.intitule from Modules m where m.filiere.NomFiliere=:nomFiliere")
+    public List<String> findModulesByFiliere(String nomFiliere);
 }

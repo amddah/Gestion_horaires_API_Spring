@@ -1,10 +1,12 @@
 package isi.projet.Controllers;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
+import isi.projet.Dto.EnseignanantIntervention;
 import isi.projet.Repository.FiliereRepo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -127,5 +129,16 @@ public class InterventionController {
 		 count.put("enseignant",ensignantrepo.count());
 		 count.put("filiere",filiereRepo.count());
 		 return count;
+	}
+
+	@GetMapping("/enseignantModule")
+	public List<Object> getEnseignantByModule() {
+
+		return this.interventionrepo.getEnseingantModulesHeures();
+	}
+
+	@GetMapping("/{email}")
+	public List<EnseignanantIntervention> getInterventionByEnseignant(@PathVariable String email)  {
+		return interventionrepo.getInterventionByEnseignant(email);
 	}
 }

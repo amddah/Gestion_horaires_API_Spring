@@ -63,7 +63,7 @@ public class EnseignantController {
         }
     }
 //	editer enseignant
-	@PutMapping("/edit/{email}")
+	@PutMapping("/{email}")
 	public ResponseEntity<String> updateEnseignat(@PathVariable String email ,@RequestBody EnseignantDTO enseignantdto) {
 		Enseignant enseignant =ensignantrepo.findById(email).orElse(null);
 		if(enseignant!=null) {
