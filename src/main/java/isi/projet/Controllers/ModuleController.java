@@ -2,21 +2,15 @@ package isi.projet.Controllers;
 
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
-import java.util.Optional;
 
-import isi.projet.Repository.ModuleRepoPagination;
-import isi.projet.Services.ModuleService;
 import isi.projet.Services.ModuleServiceInterface;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
-import org.springframework.data.domain.PageRequest;
-import org.springframework.data.domain.Pageable;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import isi.projet.Models.Filiere;
-import isi.projet.Models.ModuleDTO;
+import isi.projet.Dto.ModuleDTO;
 import isi.projet.Models.Modules;
 import isi.projet.Repository.FiliereRepo;
 import isi.projet.Repository.ModuleRepo;

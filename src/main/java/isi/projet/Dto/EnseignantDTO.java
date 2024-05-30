@@ -1,4 +1,4 @@
-package isi.projet.Models;
+package isi.projet.Dto;
 
 import lombok.Data;
 

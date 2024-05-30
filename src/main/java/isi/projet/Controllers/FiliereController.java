@@ -8,7 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import isi.projet.Models.Filiere;
-import isi.projet.Models.FiliereDTO;
+import isi.projet.Dto.FiliereDTO;
 import isi.projet.Repository.FiliereRepo;
 
 @RestController

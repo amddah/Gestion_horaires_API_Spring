@@ -1,6 +1,5 @@
 package isi.projet.Controllers;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -14,7 +13,7 @@ import org.springframework.web.bind.annotation.*;
 
 import isi.projet.Models.Enseignant;
 import isi.projet.Models.Intervention;
-import isi.projet.Models.InterventionDTO;
+import isi.projet.Dto.InterventionDTO;
 import isi.projet.Models.InterventionId;
 import isi.projet.Models.Modules;
 import isi.projet.Repository.EnseignantRepo;

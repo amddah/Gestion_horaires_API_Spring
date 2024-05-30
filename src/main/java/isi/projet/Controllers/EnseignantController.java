@@ -1,6 +1,5 @@
 package isi.projet.Controllers;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -9,8 +8,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import isi.projet.Models.Enseignant;
-import isi.projet.Models.EnseignantDTO;
-import isi.projet.Models.ModuleDTO;
+import isi.projet.Dto.EnseignantDTO;
 import isi.projet.Repository.EnseignantRepo;
 
 @RestController
